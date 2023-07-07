@@ -6,4 +6,657 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+}
+main header {
+  width: 100%;
+  height: 100%;
+}
+main header nav {
+  display: flex;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80") no-repeat center/cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(251, 249, 249, 0.975);
+  width: 100%;
+  height: 1300px;
+}
+main header nav .logo {
+  font-size: 40px;
+  padding: 50px 0 0 20px;
+  height: 10%;
+  width: 10%;
+  color: orange;
+  font-family: "Playfair Display", serif;
+}
+main header nav ul {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 60%;
+  padding: 10px 0 0 20px;
+  margin-left: 10%;
+  margin-right: 6%;
+}
+main header nav ul li {
+  padding: 40px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+main header nav ul li a {
+  color: black;
+}
+main header nav .cart {
+  font-size: 20px;
+  height: 10%;
+  padding: 40px 0 0 20px;
+  margin-left: 60px;
+  color: orange;
+  font-weight: 900;
+}
+main header nav .search {
+  font-weight: 900;
+  font-size: 20px;
+  height: 10%;
+  padding: 40px 0 0 20px;
+  margin-left: 50px;
+  color: orange;
+}
+main .welcome {
+  width: 100%;
+  height: auto;
+}
+main .welcome h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  text-align: center;
+  top: 580px;
+  width: 100%;
+  height: 200px;
+  font-size: 70px;
+  color: #0d0d25;
+}
+main .welcome h1:nth-child(2) {
+  padding-top: 80px;
+}
+main .welcome form {
+  margin-left: 25%;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  top: 780px;
+}
+main .welcome form input {
+  text-align: center;
+  font-size: 30px;
+}
+main .welcome form #location-select {
+  font-size: 30px;
+  background-color: orange;
+  margin: 0;
+  color: white;
+}
+
+.about {
+  background-image: url(/WebDev1-W4-D1/cuisinebo-starter/images/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 40%;
+  padding-right: 10%;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  height: 800px;
+}
+.about h2 {
+  padding-bottom: 25px;
+  font-size: 25px;
+  color: #ff8800;
+}
+.about h3 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+.about p {
+  line-height: 30px;
+  padding: 30px 0;
+  font-size: 25px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.about a {
+  border: none;
+  background-color: #ff8800;
+  color: #f7f7f8;
+  border-radius: 5px;
+  padding: 10px 5px 10px 10px;
+  font-size: 30px;
+  text-decoration: none;
+  appearance: none;
+  font-weight: 500;
+}
+.about a span {
+  position: relative;
+  background: #faaa47;
+  right: -5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-inline-start: 0px;
+  padding-right: 10px;
+  font-size: 30px;
+  height: 100%;
+}
+
+.order {
+  padding: 50px;
+  text-align: center;
+}
+.order h3 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.order .dots {
+  color: #ff8800;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.order .dots li {
+  padding: 10px;
+}
+.order ul.cuisine {
+  width: 60%;
+  text-align: center;
+  margin: 40px auto;
+  list-style: none;
+  text-decoration: none;
+}
+.order ul.cuisine li {
+  border-bottom: 2px solid lightgray;
+  float: left;
+  width: 20%;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.order ul.cuisine .firstlink:first-child {
+  border-bottom: 2px solid #ff8800;
+  padding-bottom: 20px;
+}
+.order ul.cuisine a {
+  text-decoration: none;
+}
+.order .gallery {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.5%;
+}
+.order .gallery .img01 {
+  background: url(https://source.unsplash.com/fdlZBWIP0aM);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img01 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img01 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img01 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img01 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img01 .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .img01 .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .img01 .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img02 {
+  background: url(https://source.unsplash.com/mmnKI8kMxpc);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img02 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img02 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img02 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img02 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img02 .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .img02 .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img03 {
+  background: url(https://source.unsplash.com/WbA_PCv3_Co);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img03 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img03 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img03 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img03 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img03 .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .img03 .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .img03 .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img04 {
+  background: url(https://source.unsplash.com/SH6vc3VOOwE);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img04 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img04 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img04 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img04 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img04 .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .img04 .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .img04 .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img05 {
+  background: url(https://source.unsplash.com/ohnRXPYXDEE);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img05 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img05 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img05 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img05 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img05 .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .img05 .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .img05 .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img06 {
+  background: url(https://source.unsplash.com/j3gz0KReZbA);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img06 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img06 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img06 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img06 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img07 {
+  background: url(https://source.unsplash.com/FFqNATH27EM);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img07 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img07 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img07 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img07 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery .img08 {
+  background: url(https://source.unsplash.com/RwoKbjJdYvE);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: 2.5%;
+  position: relative;
+  overflow: hidden;
+}
+.order .gallery .img08 .price {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000;
+}
+.order .gallery .img08 .stars {
+  font-size: 20px;
+  color: orange;
+}
+.order .gallery .img08 .menu-item {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img08 .order-now {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 0px 9px #000000;
+}
+.order .gallery .img08 .gallery-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.order .gallery .img08 .gallery-overlay span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.order .gallery .img08 .gallery-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: left 2s;
+}
+.order .gallery ul .dots {
+  width: 100%;
+}
+.order .gallery ul .dots li {
+  color: red;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.book {
+  background: url(https://source.unsplash.com/ThtzElwvwyM);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+.book h2 {
+  color: #ff8800;
+  font-size: 25px;
+}
+.book h3 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+.book i.fas {
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 3rem;
+  border: 1px solid #ff8800;
+  border-radius: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.book span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.book a {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #ff8800;
+}
+.book section {
+  float: left;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.book img {
+  width: 80%;
+  padding: 50px;
+  margin: 30px auto;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  line-height: 30px;
+  padding: 30px 0;
+  font-size: 30px;
+  padding: 50px;
+}
+
 /*# sourceMappingURL=main.css.map */
